@@ -16,6 +16,8 @@ As usual, we carried out a few steps first to understand the dataset:
 
 
 
+
+
 **Pre-processing** 
 
 Before training our model, we carried out the following steps:
