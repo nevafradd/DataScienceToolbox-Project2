@@ -25,6 +25,7 @@ An important consideration is that even with powerful GPUs, they are still have 
 
 
 **Real-world application**
+
 Wanting to scale this project also makes a lot of sense beyond just improving our model.
 
 
