@@ -14,7 +14,9 @@ Finally, we decided on classifying different traffic signs. Not only did this ta
 Our chosen dataset was better than others in the traffic area domain in a few key areas:
 
 Size – other datasets were either too small which would lead to less interesting results or too large, requiring intense computational power. At more than 50,000 images, our dataset finds a balance between the two 
+
 Comprehensive – with more that 40 different classes, we have enough complexity to take advantage of our neural network and increase the applicability of our results to the real world 
+
 Documentation – being one of the most upvoted datasets with 537 different codes written for it, we benefit from an extensive list of examples of approaches to the data, helping to contrast our own work and improve our own approach 
 
 
