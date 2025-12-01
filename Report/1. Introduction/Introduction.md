@@ -1,3 +1,5 @@
+Firstly, we shall outline our initial exploration and the different options we considered.
+
 **Deciding on our area**
 
 We explored datasets across a range of sources from Kaggle to 	Hugging Face. Below outlines the main options we explored. 
@@ -21,4 +23,5 @@ Documentation – being one of the most upvoted datasets with 537 different code
 
 
 **Finalising our question**
+
 The dataset naturally lends itself to the task of classifying images of different traffic signs. This is further motivated by the increasing use of self-driving cars and the topical implementation of AI. Not only can we explore neural networks, but we can also produce a tangible result surrounding the ability of self-driving cars to navigate roads which has real world, tangible consequences. 
