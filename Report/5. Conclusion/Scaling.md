@@ -6,9 +6,9 @@ Storage – Given the limited storage using GitHub or storing data locally on ou
 
 Hardware – Currently for the models we utilised a CPU given the lack of easy access to a GPU – this, however, would lead to very long runtimes at scale. Instead, we would implement multiple GPUs at the same time which would be able to process different portions of the dataset simultaneously.
 
-Data Distribution – To take full advantage of the aforementioned hardware, we would then need software to coordinate them. PyTorch’s framework DistributedDataParallel is a popular choice that splits the data automatically, runs the same model on each GPU, shares each GPUs findings and then updates all the different models
+Data Distribution – To take full advantage of the aforementioned hardware, we would then need software to coordinate them. PyTorch’s framework DistributedDataParallel is a popular choice that splits the data automatically, runs the same model on each GPU, shares each GPUs findings and then updates all the different models.
 
-I/O Bottleneck – Although we might have the strong computational power of our GPUs, they can be limited by the speed at which data arrives and leaves especially given the relatively slower speed of a CPU thus creating an input/output bottleneck. To avoid opening each image individually, we would shard images in to TFRecord formats which are larger files that reduce disk seeks. Using PyTorch DataLoader would also allow the use of multiple CPUs
+I/O Bottleneck – Although we might have the strong computational power of our GPUs, they can be limited by the speed at which data arrives and leaves especially given the relatively slower speed of a CPU thus creating an input/output bottleneck. To avoid opening each image individually, we would shard images in to TFRecord formats which are larger files that reduce disk seeks. Using PyTorch DataLoader would also allow the use of multiple CPUs.
 
 GPU Memory Limitations – Even with powerful GPUs, they are still limited by their memory. To address this, we could use mixed precision training where we use 16 bit instead of 32 bit numbers which would lowers numerical precision but halves memory usage.
 
