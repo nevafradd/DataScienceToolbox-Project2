@@ -16,8 +16,11 @@ GPU Memory Limitations – Even with powerful GPUs, they are still limited by th
 **Real-world application**
 
 There exists great motivation to scale this project.
+
 Firstly, we would be able to train our models on data beyond the scope of Germany to other countries and regions with different traffic sign symbols. In the context of self-driving cars, this would encourage the deployment of self-driving cars more globally as they learn to navigate different environments. 
+
 Furthermore, we could expand the pipeline to include firstly the identification of the sign from an image including the full landscape and then the task of classifying the actual sign to more closely resemble the real-world conditions a self-driving car would have in practice. 
+
 Also, the use of cloud more easily enables continuous learning meaning that new edge cases (such as a sign being obscured by snow) can be easily added to the dataset so that the model can be retrained and accommodate more and more information. 
 
 
