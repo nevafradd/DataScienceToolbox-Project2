@@ -27,6 +27,7 @@ The worst predicted classes include class 37 (straight or left), class 0 (speed 
 
 <img width="930" height="224" alt="image" src="https://github.com/user-attachments/assets/82dc9ed5-b51c-4159-9c17-a26638261053" />
 
+
 However, the most important finding to focus on is that class 0 (speed limit 20km/h) was frequently misclassified as class 2 (50km/h). This raises notable concern given that mixing up these two signs could have disastrous consequences such as a car automatically speeding up in a residential area and greatly increasing the chances of an accident. Because of this, further model tuning would likely involve overly punishing the model for making these kinds of mistakes and not treating all misclassifications with the same weight. 
 
 Furthermore, combined with the fact that the accuracy of even the better model was still only 74.15% - it is difficult to justify the implementation of these models in the real-world where misclassifications are incredibly dangerous. However, this nicely motivates scaling the dataset by 1000x in order to improve how applicable these models are in real world, self-driving cars.
