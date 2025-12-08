@@ -2,14 +2,11 @@ The aim of this section is to simultaneously summarise and expand on some of the
 
 **1. Motivation behind the models**
 
-Firstly, EfficientNet and ResNet18 contrast well given the aim and complexity of each model. 
+Firstly, EfficientNet and ResNet18 contrast well given the aim and complexity of each model. ResNet18 was crucial in tackling something called the 'vanishing gradient' problem, where neural networks that were trained on more and more layers would produce worse results as the model became confused. By allowing the model to skip layers, it helped solve this problem and also provided a foundation for other models to build upon. 
 
-ResNet18 was crucial in tackling something called the 'vanishing gradient' problem, where neural networks that were trained on more and more layers would produce worse results as the model became confused. By allowing the model to skip layers, it helped solve this problem and also provided a foundation for other models to build upon. Conversely, EfficientNet, is more modern and focuses on optimising the width of each layer, the number of layers and the resolution (detail of the input). Because of this, we get to see two very different models: one that is foundational and one that is aspirational.
+Conversely, EfficientNet, is more modern and focuses on optimising the width of each layer, the number of layers and the resolution (detail of the input). Because of this, we get to see two very different models: one that is foundational and one that is aspirational.
 
-Secondly, each model is appropriate for the computational requirements of this project. 
-
-
-ResNet18 refers to 18 layers being allowed in the model. There are also other versions like ResNet-18, ResNet-101 etc. Similarly, EfficientNet-B0 is a base, starting model that is meant to be fast to train with other models available like B1, B2 all the way to B7. Not only does this make sense computationally but it also leads nicely to the discussion around scaling because as we scale, we would start to look at these other variations of each model. 
+Secondly, each model is appropriate for the computational requirements of this project. ResNet18 refers to 18 layers being allowed in the model. There are also other versions like ResNet-18, ResNet-101 etc. Similarly, EfficientNet-B0 is a base, starting model that is meant to be fast to train with other models available like B1, B2 all the way to B7. Not only does this make sense computationally but it also leads nicely to the discussion around scaling because as we scale, we would start to look at these other variations of each model. 
 
 **2. Stratification**
 
