@@ -1,6 +1,6 @@
 # Results 
 
-In this section, we will summarise and analyse the results of implementing our models EfficientNet and ResNet.
+In this section, we will compare how the models performed and discuss how we might scale this project. 
 
 **Comparing the Effectiveness of Both Models**
 
