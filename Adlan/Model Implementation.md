@@ -4,6 +4,7 @@ The aim of this section is to simultaneously summarise and expand on some of the
 
 Firstly, EfficientNet and ResNet18 contrast well given the aim and complexity of each model. 
 
+
 ResNet18 was crucial in tackling something called the 'vanishing gradient' problem, where neural networks that were trained on more and more layers would produce worse results as the model became confused. By allowing the model to skip layers, it helped solve this problem and also provided a foundation for other models to build upon. Conversely, EfficientNet, is more modern and focuses on optimising the width of each layer, the number of layers and the resolution (detail of the input). Because of this, we get to see two very different models: one that is foundational and one that is aspirational.
 
 Secondly, each model is appropriate for the computational requirements of this project. 
