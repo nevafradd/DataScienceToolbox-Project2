@@ -10,11 +10,14 @@ As expected given the model's more modern architecture, EfficientNet outperforme
 2. Top-5 Accuracy: 94.75% vs 93.56%
 3. Weighted F1-score: 0.7391 vs 0.6884
 
-While tempting to conclude that EfficientNet is the better model, we need to also think about how each model translates to the specific application self-driving cars.
+While tempting to conclude that EfficientNet is the better model, we need to also think about how each model translates to the specific application of self-driving cars.
 
-Despite being more accurate, EfficientNet is computationally much slower. It can process about 17 images every second compared to ResNet's 51 images every second. For a car camera's typical 30 frames per second, EfficientNet would certainly struggle to keep up. This also translates to scaling with 32 GPUs, where inference time would be 22.16 hours for EfficientNet and 7.45 hours for ResNet. Also,raining time would be 31 days for EfficientNet and 10 days for ResNet.
+Despite being more accurate, EfficientNet is computationally much slower. It can process about 17 images every second compared to ResNet's 51 images every second. For a car camera's typical 30 frames per second, EfficientNet's 17 images per second falls well below this threshold. This also translates to hypothetically scaling the project with 32 GPUs and 90% efficiency:
 
-What this means is that while EfficientNet is better and classifying signs, ResNet is actually better in practice - specfically for self-driving cars where there is a need to process images quickly enough so that the car can take corrective action. This really shows the importance considering not just the accuracy of a model but its speed and feasability. 
+1. Projected inference time - 22.16 hours for EfficientNet and 7.45 hours for ResNet
+2. Projected training time - 1 days for EfficientNet and 10 days for ResNet
+
+What this means is that while EfficientNet is better at classifying signs, ResNet is actually better in practice - specifically for self-driving cars where there is a need to process images quickly enough so that the car can take corrective action. This really shows the importance of considering not just the accuracy of a model but its speed and feasibility. 
 
 **Common Weaknesses**
 
