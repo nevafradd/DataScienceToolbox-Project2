@@ -16,7 +16,11 @@ Despite being more accurate, EfficientNet is computationally much slower. It can
 
 Ultimately, this means that while EfficientNet has better predictive power, ResNet-18 is often better in practice for self-driving cars - where high throughput is paramount.
 
-**Similarities between them**
+**Common Weaknesses**
+
+Both models struggled similary in a few different ways. The worst predicted classes include class 37 (straight or left), class 0 (speed limit 20km/h) and class 27 (pedestrian crosswalk ahead). Some signs were also often confused such as mixing up different speed limits and directions being confused with other directions.
+
+However, the most crucial finding to bring attention to is class 0 (speedlimit 20km/h) being frequently classified as class 2 (50km/h). This raises notable concern given that mixing up these two signs could have disastrous consequences such as a car automatically speeding up in a residential area and greatly increasing the chances of an accident. 
 
 
 
