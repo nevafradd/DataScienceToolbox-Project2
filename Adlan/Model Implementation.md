@@ -16,11 +16,15 @@ This can create a problem where if we train our models, they might see very litt
 
 **3. Not using Auto Augmentation**
 
-Augmentation is where we create artificial images to introduce additional variety to the dataset - increasing how well the model generalises to real world variation. These new images can involve modifying our existing images by rotating them, flipping them, distorting them, cropping them and so on. Auto Augmentation is simply where we automate this process of deciding what exact adjustments to make in order to create these new pictures. However, we have to be careful here because in the context of traffic signs - flipping an arrow for example completely changes its meaning which is why we do not use Auto Augmentation here. 
+Augmentation is where we create artificial images to introduce additional variety to the dataset - increasing how well the model generalises to real world variation. 
+
+These new images can involve modifying our existing images by rotating them, flipping them, distorting them, cropping them and so on. Auto Augmentation is simply where we automate this process of deciding what exact adjustments to make in order to create these new pictures. However, we have to be careful here because in the context of traffic signs - flipping an arrow for example completely changes its meaning which is why we do not use Auto Augmentation here. 
 
 **4. Downsampling**
 
-Downsampling is essentially reducing the amount of data our model has to work with. Models regularly took more than 2 hours to run given us being limited to the use of a CPU. Combined with limited time and us needing to rerun the models multiple times as we made certain adjustments - we needed a convenient solution. By reducing the proportion of each class by 50%, we reduced the time it took to run our models whilst ensuring that each class was similarly represented in the dataset. 
+Downsampling is essentially reducing the amount of data our model has to work with. 
+
+Models regularly took more than 2 hours to run given us being limited to the use of a CPU. Combined with limited time and us needing to rerun the models multiple times as we made certain adjustments - we needed a convenient solution. By reducing the proportion of each class by 50%, we reduced the time it took to run our models whilst ensuring that each class was similarly represented in the dataset. 
 
 If we had more time or easy access to a strong GPU then we could simply run the models - however, downsampling allows us to achieve meaningful results within the scope of our project.
 
