@@ -14,7 +14,7 @@ Despite these shortcomings, this links very nicely to further actions we could t
 
 3. Given that the traffic signs are already zoomed in to the traffic signs, we could train the model to first identify the sign from a larger landscape picture and then carry out the classification for a complete, implementable pipeline.
 
-Hence, despite these models not being safe for real-world deployment in their current form, the work in this project creates a great foundation to build upon to improve the safety, speed and accuracy of these models in self-driving cars. 
+Hence, despite these models not being safe for real-world deployment in their current form, the work in this project creates an optimistic foundation to build upon to improve the safety, speed and accuracy of these models in self-driving cars. 
 
 
 
