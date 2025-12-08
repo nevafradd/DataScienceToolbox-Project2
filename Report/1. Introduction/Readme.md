@@ -2,7 +2,7 @@
 
 In this first section, we'll begin by explaining our initial approach to the task - including the different options we considered and the rationale behind our final choice.
 
-**Deciding on our area**
+**Deciding on our Area**
 
 We explored datasets across a range of sources from Kaggle to Hugging Face. Here are the main options we explored:
 
@@ -14,7 +14,7 @@ Finally, we decided on classifying different traffic signs. Not only did this ta
 1.	The dataset was specific to Germany so our model could be expanded to different countries 
 2.	Given our images were exactly fitted to the sign, we could involve the wider timeline of having the model first identify the sign from a larger picture 
 
-**Choosing our specific dataset** 
+**Choosing our Specific Dataset** 
 
 Our chosen dataset was better than others in the traffic area domain in a few key areas:
 
@@ -25,6 +25,6 @@ Comprehensive – with more that 40 different classes, we have enough complexity
 Documentation – being one of the most upvoted datasets with 537 different codes written for it, we benefit from an extensive list of examples of approaches to the data, helping to contrast our own work and improve our own approach 
 
 
-**Finalising our question**
+**Finalising our Question**
 
 The dataset naturally lends itself to the task of classifying images of different traffic signs. This is further motivated by the increasing use of self-driving cars and the topical implementation of AI. Not only can we explore neural networks, but we can also produce a tangible result surrounding the ability of self-driving cars to navigate roads which has real world, tangible consequences. 
