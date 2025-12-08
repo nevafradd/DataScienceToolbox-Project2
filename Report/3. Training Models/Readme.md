@@ -1,6 +1,6 @@
 The aim of this section is to simultaneously summarise and expand on some of the key decisions surrounding the implementation of our models: ResNet-18 and EfficientNet.
 
-**1. Motivation behind the models**
+**1. Motivation behind the Models**
 
 Firstly, EfficientNet and ResNet-18 contrast well given the aim and complexity of each model. ResNet-18 was crucial in tackling something called the 'vanishing gradient' problem, where neural networks that were trained on more and more layers would produce worse results as the model became confused. By allowing the model to skip layers, it helped solve this problem and also provided a foundation for other models to build upon. 
 
@@ -30,7 +30,7 @@ Models regularly took more than 2 hours to run given us being limited to the use
 
 If we had more time or easy access to a strong GPU then we could simply run the models - however, downsampling allows us to obtain meaningful results within the scope of our project.
 
-**5. Freezing the backbone layers**
+**5. Freezing the Backbone Layers**
 
 What guides the implementation of both models in our project is the concept of transfer learning - the idea of taking these models that have already been trained on a massive dataset, and tailoring it to our dataset with the advantage of saving a lot of time in the process. This is why we 'freeze' the backbone layers and only change the last classifier layer so that instead of classifying the original 1000 classes, it classifies the 43 classes specific to our dataset. The backbone layers themselves are crucial in that they have already learnt a lot of general patterns like edges, shapes and different textures.
 
