@@ -15,7 +15,7 @@ While tempting to conclude that EfficientNet is the better model, we need to als
 Despite being more accurate, EfficientNet is computationally much slower. It can process about 17 images every second compared to ResNet's 51 images every second. For a car camera's typical 30 frames per second, EfficientNet's 17 images per second falls well below this threshold. This also translates to hypothetically scaling the project with 32 GPUs and 90% efficiency:
 
 1. Projected inference time - 22.16 hours for EfficientNet and 7.45 hours for ResNet
-2. Projected training time - 1 days for EfficientNet and 10 days for ResNet
+2. Projected training time - 31 days for EfficientNet and 10 days for ResNet
 
 What this means is that while EfficientNet is better at classifying signs, ResNet is actually better in practice - specifically for self-driving cars where there is a need to process images quickly enough so that the car can take corrective action. This really shows the importance of considering not just the accuracy of a model but its speed and feasibility. 
 
