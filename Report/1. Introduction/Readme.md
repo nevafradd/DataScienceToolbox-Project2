@@ -1,3 +1,5 @@
+# Introduction 
+
 Firstly, we shall outline our initial exploration and the different options we considered.
 
 **Deciding on our area**
