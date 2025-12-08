@@ -8,7 +8,11 @@ Secondly, each model is appropriate for the computational requirements of this p
 
 **2. Stratification**
 
-As it was shown in the EDA, the dataset has a huge imbalance between different classes with there being a roughly 2000 size difference between the some of the largest and smallest classes. This can create a problem where if we train our models, they might see very little of some of the minority classes leading to poor results when it comes to predicting those classes especially. Stratification just makes sure that each training sample has the same proportion of each class to prevent this. 
+As it was shown in the EDA, the dataset has a huge imbalance between different classes with there being a roughly 2000 size difference between the some of the largest and smallest classes. 
+
+<img width="940" height="350" alt="image" src="https://github.com/user-attachments/assets/130463ed-8d8d-4882-af05-fcd6e4595c5a" />
+
+This can create a problem where if we train our models, they might see very little of some of the minority classes leading to poor results when it comes to predicting those classes especially. Stratification just makes sure that each training sample has the same proportion of each class to prevent this. 
 
 **3. Not using Auto Augmentation**
 
