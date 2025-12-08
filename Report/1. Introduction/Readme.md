@@ -1,14 +1,15 @@
 # Introduction 
 
-Firstly, we shall outline our initial exploration and the different options we considered.
+In this first section, we'll begin by explaining our initial approach to the task - including the different options we considered and the rationale behind our final choice.
 
 **Deciding on our area**
 
-We explored datasets across a range of sources from Kaggle to 	Hugging Face. Below outlines the main options we explored. 
+We explored datasets across a range of sources from Kaggle to Hugging Face. Here are the main options we explored:
 
 Our first consideration was predicting house prices based on metadata and imaging. Although this would have been quite intuitive and very practical, we struggled to find housing images. For example, Willow offers a comprehensive range of housing data, but this was limited to metadata. There was the option of manually scraping housing images, but this would have been too computationally intensive and would have likely resulted in an inconsistent dataset.  
 
 The next area we considered was medical data. Given the common use of x-rays, we had a range of options from predicting bone fractures and brain tumours. Bone fractures seemed a bit too simple, and it was also difficult to justify the need for scaling. Conversely, brain tumours were too complex given our lack of knowledge around different parts of the brain. 
+
 Finally, we decided on classifying different traffic signs. Not only did this task have a very tangible impact, but it would also allow us to not get distracted by having to have specific expert knowledge. Furthermore, scalability seemed justifiable given:
 1.	The dataset was specific to Germany so our model could be expanded to different countries 
 2.	Given our images were exactly fitted to the sign, we could involve the wider timeline of having the model first identify the sign from a larger picture 
