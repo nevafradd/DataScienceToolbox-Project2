@@ -14,7 +14,7 @@ However, while ResNet is the relatively more practical option, both models still
 
 3. Given that the traffic signs are already zoomed in to the traffic signs, we could train the model to first identify the sign from a larger landscape picture and then carry out the classification for a complete, implementable pipeline.
 
-Hence, despite these models are not yet safe for deployment in their existing form, the work in this project creates an solid foundation and optimistic roadmap to build upon to improve the safety, speed and accuracy of these models in self-driving, autonomous cars. 
+Hence, despite the fact that these models are not yet safe for deployment in their existing form, the work in this project creates an solid foundation and optimistic roadmap to build upon to improve the safety, speed and accuracy of these models in self-driving, autonomous cars. 
 
 
 
