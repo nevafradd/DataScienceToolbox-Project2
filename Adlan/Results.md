@@ -23,10 +23,11 @@ What this means is that while EfficientNet is better at classifying signs, ResNe
 
 Interestingly, both EfficientNet and ResNet struggled in a few similar ways.
 
-The worst predicted classes include class 37 (straight or left), class 0 (speed limit 20km/h) and class 27 (pedestrian crosswalk ahead). Some signs were also often confused such as mixing up different kinds of speed limits and different kinds of directions. Below are some examples of these kinds of misclassifications where T is the true class and P is the predicted class.
+The worst predicted classes include class 37 (straight or left), class 0 (speed limit 20km/h) and class 27 (pedestrian crosswalk ahead). Some signs were also often confused such as mixing up different kinds of speed limits and different kinds of directions. 
 
 <img width="930" height="224" alt="image" src="https://github.com/user-attachments/assets/82dc9ed5-b51c-4159-9c17-a26638261053" />
 
+*Figure 1: Examples of misclassified traffic signs from our models. Each image shows the true sign (T) and what the model predicted (P).*
 
 However, the most important finding to focus on is that class 0 (speed limit 20km/h) was frequently misclassified as class 2 (50km/h). This raises notable concern given that mixing up these two signs could have disastrous consequences such as a car automatically speeding up in a residential area and greatly increasing the chances of an accident. Because of this, further model tuning would likely involve overly punishing the model for making these kinds of mistakes and not treating all misclassifications with the same weight. 
 
