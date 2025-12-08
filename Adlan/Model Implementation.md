@@ -8,7 +8,7 @@ Secondly, each model is appropriate for the computational requirements of this p
 
 **Avoiding the use of Auto Augmentation**
 
-Augmentation involves creating artificial images to introduce additional variety to the dataset to increase how well the model generalises to real world variation. These new images can involve modifying our existing images by rotating them, flipping them, distorting them, cropping them and so on. Auto Augmentation is simply where we automate this process of deciding what adjustments to make in order to create these new pictures. However, we have to be careful here because in the context of traffic signs - flipping an arrow for example completely changes its meaning which is why we do not use Auto Augmentation here. 
+Augmentation is where we create artificial images to introduce additional variety to the dataset - increasing how well the model generalises to real world variation. These new images can involve modifying our existing images by rotating them, flipping them, distorting them, cropping them and so on. Auto Augmentation is simply where we automate this process of deciding what exact adjustments to make in order to create these new pictures. However, we have to be careful here because in the context of traffic signs - flipping an arrow for example completely changes its meaning which is why we do not use Auto Augmentation here. 
 
 **Downsampling**
 
