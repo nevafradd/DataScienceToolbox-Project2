@@ -33,5 +33,43 @@ However, the most important finding to focus on is that class 0 (speed limit 20k
 
 Furthermore, combined with the fact that the accuracy of even the better model was still only 74.15% - it is difficult to justify the implementation of these models in the real-world where misclassifications are incredibly dangerous. However, this nicely motivates scaling the dataset by 1000x in order to improve how applicable these models are in real world, self-driving cars.
 
+**Implementation of Scaling the Project**
+
+Given our current training set contains around 39,000 images with more than 40 classes, our scaled project would involve working with around 39 million images. Now, let's discuss how we would actually implement this in practice.
+
+Firstly we would use cloud storage instead of GitHub. GitHub is great for smaller projects but isn't suitable for storing large file sizes. Furthermore, the platform lacks a lot of features we can find in cloud platforms like different backup options, easier accessibility and overall lower chances of data corruption or losses. Some examples include Amazon S3, Google Cloud Storage and Azure Blob Storage. These would be more than adquate to handle our dataset growing from around 2GB to 1.9 TB.
+
+Next, unlike our project where we used a CPU to run the models, using not just one but multiple GPUs simultaneously would allow us to tackle different parts of the dataset at the same time. Our scaling analysis previously showed that with 32 GPUs and 90% efficiency, training would take 31 days under EfficientNet and 10 days under ResNet. To coordinate the use of these GPUs, we could use a framework like PyTorch's DistributedDataParallel which simply involves splitting the data, running the same model on each GPU and updating each model at the same time.
+
+One key risk to look out for is the potential of a bottleneck created by the GPUs not receiving information fast enough - which we can refer to as an input/output bottleneck. A key way to avoid this is to reduce the number of disk seeks (loading each file one at a time) by combining the images in to larger chunks, for example putting them in to a TFRecord format. Additionally, we can use PyTorch DataLoader which allows the use of multiple CPUs to further keep up with the computational power of the GPUs. 
+
+Finally, we can consider which model to implement at scale. Given that ResNet-18 ran 3 times quicker than EfficientNet, we must consider the tradeoff between speed and accuracy. Especially at scale, ResNet appears to be the more practical choice in spite of its lower accuracy. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
