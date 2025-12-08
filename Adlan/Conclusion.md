@@ -8,11 +8,11 @@ In terms of how they performed, EfficientNet was more accurate (74% vs 68%) but 
 
 Despite these shortcomings, this links very nicely to further actions we could take if we had more time and resources.
 
-Firstly, we could scale the project by 1000x which we would implement through a few key changes such as using cloud storage, using multiple GPUs and frameworks like DistributedDataParallel to coordinate them. Here, we would likely use ResNet for mentioned reason of it being practically feasible. 
+1. Scaling the project by 1000x which we would implement through a few key changes such as using cloud storage, using multiple GPUs and frameworks like DistributedDataParallel to coordinate them. Here, we would likely use ResNet for mentioned reason of it being practically feasible. 
 
-Secondly, we could fine tune the models to overly punish dangerous misclassifications to improve the safety of the implementation of these models. Furthermore, we could use the more intensive versions of each models like ResNet-50 and EfficientNet-B3.
+2. Fine tuning the models to overly punish dangerous misclassifications to improve the safety of the implementation of these models. Furthermore, we could use the more intensive versions of each models like ResNet-50 and EfficientNet-B3.
 
-Thirdly, given that the traffic signs are already zoomed in to the traffic signs, we could train the model to first identify the sign from a larger landscape picture and then carry out the classification for a complete, implementable pipeline.
+3. Given that the traffic signs are already zoomed in to the traffic signs, we could train the model to first identify the sign from a larger landscape picture and then carry out the classification for a complete, implementable pipeline.
 
 Hence, despite these models not being safe for real-world deployment in their current form, the work in this project creates a great foundation to build upon to improve the safety, speed and accuracy of these models in self-driving cars. 
 
