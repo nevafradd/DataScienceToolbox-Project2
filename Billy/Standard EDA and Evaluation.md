@@ -1,6 +1,6 @@
 # EDA and Evaluation
 
-This will be a summary of the EDA and (Billy's) evaluation of the German Traffic Sign dataset.
+This will be a summary of the EDA and (Billy's initial and final) evaluation of the German Traffic Sign dataset.
 
 ## EDA
 
@@ -8,4 +8,4 @@ The EDA conducted clearly shows large disparities in the data. The initial plot 
 
 ## Evaluation
 
-finish eval soon. talk about changes in models and impact on evaluation and EDA and summarise MY evaluation (my folder)
+Initially, the basic evaluation was conducted on the validation set to better understand the models and how they performed. This became a little muddled after we looked at the values more in depth. EfficientNet would regularly never even attempt to classify certain classes, leading to recall, precision and f1-scores of 0 for those classes. Clearly this was an issue, and luckily enough this led to further fine tuning which resolved this issue. Standard confusion matrices were then calculated followed by generating misclassified images from both models. The formal evaluation starts of with running both models with their fine tuned hyperparameters on the test set. The results suggest that EfficientNet is the superior of the two models, with higher accuracy and top-5 accuracy, whilst ResNet18 reports a better loss. However, with reference to the accuracy figures of both models, achieving a score of roughly 70% is not ideal whatsoever given the dataset, and provides us with good reasoning to believe that both models have performed poorly (ask yourself: would you want to be in a self-driving car that correctly classifies the traffic sign only 70%? Probably not). The remaining evaluation was talked about in detail in the file, so we will not regurgitate it here. Scaling was not covered in this evaluation as that can be found in Leo's file and in the report. References were provided in the EDA and evaluation files respectively.
